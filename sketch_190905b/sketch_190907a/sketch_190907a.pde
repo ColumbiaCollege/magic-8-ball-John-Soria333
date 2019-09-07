@@ -1,5 +1,5 @@
   void setup() {
-  size(500, 500);
+  size(700, 500);
   background(255);
   }
   //switches to active mode
@@ -10,7 +10,7 @@
   "Try again in a second", "Unfortunately, yes"};
   //rerolls on mouse clicked
   void mouseClicked() {
-    
+    background(255);
     float Japamas=random(0, 8);
     int Pajamas=int(Japamas);
     //work in progress, but if Pajamas=0, display the first dialogue
@@ -18,7 +18,7 @@
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(25);
-    text(predictions[Pajamas], 150, 250);
+    text(predictions[Pajamas], 325, 250);
     }
   println(Pajamas);
   }
